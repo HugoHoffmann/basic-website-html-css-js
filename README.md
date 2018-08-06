@@ -1,1 +1,1 @@
-# casa_inteligente_site_b-sico
+# casa_inteligente_site_basico
