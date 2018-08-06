@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Casa Inteligente</title>
+        <meta name="description" content="Casa Inteligente">
+        <meta name="author" content="Hugo Hoffmann e Luiz Augusto Moratelli">
+        <style>
+        @import url(css/mini.css) (min-width: 0px);
+        @import url(css/medio.css) (min-width: 960px);
+        @import url(css/normal.css) (min-width: 1200px);
+        @font-face {
+            font-family: Roboto;
+            src: url(fonts/roboto.woff);
+        }
+        </style>
+        <link rel="shortcut icon" href="media/im.jpg" type="image/x-icon" />
+        <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+        <script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js" charset="utf-8"></script>
+        <script>
+            $('document').ready(function() {
+                $('#tel').mask('(99) 99999-9999', {placeholder:"(99)99999-9999"});
+                $('#tel').on('blur', function() {
+                    var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
+
+                    if( last.length == 3 ) {
+                        var move = $(this).val().substr( $(this).val().indexOf("-") - 1, 1 );
+                        var lastfour = move + last;
+                        var first = $(this).val().substr( 0, 9 );
+
+                        $(this).val( first + '-' + lastfour );
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="linha">
+    				<div class="coluna col2">
+    					<h1 class="logo">SmartHome</h1>
+    				</div>
+    				<div class="coluna col10">
+                        <nav>
+        					<ul class="menu inline sem-marcador">
+        						<li><a href="#InternetOfThings">Internet das Coisas</a></li>
+        						<li><a href="#smartHome">Casa Inteligente</a></li>
+                                <li><a href="#moreInfo">+ Info</a></li>
+        						<li><a href="#gallery">Galeria</a></li>
+        						<li><a href="#registrationForm">Newsletter</a></li>
+        					</ul>
+                        </nav>
+    				</div>
+    		</div>
+        </header>
+        <section>
+            <div id="InternetOfThings">
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h2>A Internet das Coisas</h2>
+                    </div>
+                    <div class="coluna col12">
+                        <img src="media/imagem5.jpg" alt="" />
+                    </div>
+                    <div class="coluna col12">
+                        <p>“<strong>Internet das Coisas</strong>” é um termo popular que abrange todo e qualquer objeto com algum processamento eletrônico,
+                         os chamados “objetos inteligentes”, num mundo onde essa “<em>inteligência</em>” vai pouco a pouco se tornando onipresente.
+                         É a colocação dos objetos em rede, juntamente com serviços web que integraminformação a esses objetos.
+                         A internet das coisas usa tecnologia como<abbr title="Resource Description Framework"> RFID</abbr>, que possibilita a descrição das
+                         , das ligações dos dados e relação entre objetos e outras tecnologias como: sensores, rede <i>wirelles</i>, etiquetas com
+                         códigos 2D e smartphones. Já são muitos os objetos conectados, tais como geladeiras, forno de microondas, home teather,
+                         óculos, carros e elevadores. Com a constatação cada vez maior da usabilidade desta rede, grandes empresas vem tomando a
+                         iniciativa para unificar a internet das coisas. Eles pretendem estabelecer padrões, criando protocolos em comum para
+                         garantir a conexão entre os mais variados dispositivos.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="smartHome">
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h2>O que é e como funciona?</h2>
+                        <p>
+                            Casa inteligente é um espaço residencial ou de escritórios onde encontramos soluções integradas baseadas nas
+                            tecnologias de informação, de modo a oferecer uma infraestrutura avançada que permita a quem nela habita usufruir
+                            de uma vasta gama de aplicações e serviços tais como segurança, gestão de energia, conforto, automação de tarefas
+                            domésticas, sistemas de áudio, vídeo e iluminação, etc.
+                        </p>
+                        <p>
+                            Uma casa inteligente possui <strong>três pilares fundamentais</strong>, que são o design, a tecnologia e o meio ambiente
+                            os quais são indissociáveis e coexistem no tempo criando uma estrutura residencial que terá obrigatoriamente
+                            que atender as evoluções da sociedade e do indivíduo.
+                        </p>
+                        <p>
+                            A Casa Inteligente controla automaticamente a temperatura, liga a iluminação, toca música, abre ou fecha
+                            portas e janelas, dispara alarmes e envia mensagens ao morador se alguém aparecer, tudo isso apenas usando o
+                            Smartphone, um Tablet, Ipad ou o próprio computador como controle remoto.
+                        </p>
+                        <p>
+                            Esse sistema só é possível através de avançadas tecnologias de processamento e controle instaladas
+                            estrategicamente e quase imperceptíveis. As Casas Inteligentes também podem ser programadas para
+                            ganharem personalidade de acordo com acontecimentos pré-programados ou de acordo com o gosto de quem
+                            reside nela. Ou seja, o proprietário pode controlar a casa quando estiver viajando, ou deixar configurado
+                            o que deve ser feito se algum evento ocorrer, como por exemplo:
+                        </p>
+                        <ul>
+                            <li>
+                                <h4>Segurança</h4>
+                                <p>
+                                    Se alguém se aproximar ligar luzes em uma determinada ordem, juntamente com a televisão.
+                                    Se a distância continuar a diminuir, o alarme é acionado e um e-mail enviado ao smartphone,
+                                    além de avisar uma central de monitoramento.
+                                </p>
+                                <p>
+                                    Também é possível controlar quem pode entrar em cada horário, ou simplesmente monitorar quem
+                                    entrou e quanto tempo permaneceu na casa.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Praticidade</h4>
+                                <p>
+                                    É possível abrir o portão da garagem pelo celular, as luzes do caminho se acendem, o ar condicionado
+                                    é ligado e o aparelho de som toca sua música favorita. Esse recurso permite criar cenários
+                                    apropriados para momentos especiais.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Conforto</h4>
+                                <p>
+                                    Pode-se programar, por exemplo, no horário de acordar para que a televisão ligue com volume
+                                    baixo e as cortinas se abram devagar.
+                                </p>
+                            </li>
+                        </ul>
+                        <h4>Quanto custa uma casa inteligente?</h4>
+                        <p>
+                            O custo de implantação de um sistema de automação dependerá da escolha dos módulos a serem
+                            adquiridos sendo o primeiro (automação de áudio-vídeo) muito acessível, mas pode ultrapassar o
+                            próprio valor do imóvel, dependendo da área da casa e do nível de automação. Mas é importante
+                            lembrar que itens de automação agregam valor ao imóvel, o que acaba diluindo o custo.
+                        </p>
+                        <h4>Considerações</h4>
+                        <p>
+                            Tudo isso já faz parte da realidade dos sistemas de automação, cada vez mais usados em todo o mundo.
+                            Vai chegar um momento em que nos perguntaremos como pudemos viver tanto tempo sem esses confortos.
+                            Mas preparar uma casa ou apartamento para receber recursos como esse exige um pouco de criatividade,
+                            ou seja, quanto mais o sistema puder ser acionado de forma intuitiva, melhor o usuário irá se sentir,
+                            pois nem perceberá a infraestrutura existente para que tudo funcione do modo desejado.
+                        </p>
+                        <h2>Google Home: o alto-falante inteligente</h2>
+                        <p>
+                        	Google Home é um alto-falante conectado a Wi-Fi que funciona como uma espécie de assistente pessoal.
+                        	 A partir dele, será possível, por exemplo, 
+                        	fazer perguntas como as feitas no Google (como se fala maçã em espanhol?,
+                        	 qual o nome completo do Pablo Picasso? ou vai chover hoje?).
+                        </p>
+                        <p>
+                        	Além disso, será possível verificar sua agenda de compromissos, configurar alarmes e estabelecer um 
+                        	timer, ou pedir para tocar alguma playlist em específico de seu sistema de streaming — 
+                        	todas as funções realizadas por comando de voz.
+                        </p>
+                        <p>
+                        	Como esperado, o Google Home se integrará ao ecossistema já criado pelos dispositivos Chromecast e 
+                        	Chromecast Audio instalados na casa. Será possível, por exemplo, pedir para ver fotos na televisão ou 
+                        	pedir para tocar determinada música em todas as caixas de som da casa.
+                        </p>
+                        <p>
+                        	Mais do que ser uma assistente, a ideia do Home é conectar os itens eletrônicos da casa. O gadget funcionará 
+                        	com os principais protocolos de dispositivos de casa inteligente, como o OpenThread, usado pela Nest (empresa do próprio Google).
+                        </p>
+                        <p>
+                        	A companhia também espera que haja apps adaptados para o Home, como programas que permitam pedir flores diretamente pelo 
+                        	Google Home ou chamar um Uber apenas por comando de voz.
+                        </p>
+                        <h2> Google Home torna sua casa inteligente com o controle da sua voz</h2>
+                        <p>
+                        	À venda nos Estados Unidos pelo preço de US$ 129 (R$ 420, no câmbio atual, sem cálculo de impostos).
+                        </p>
+                        <p>
+                        	Com um alto-falante de grande alcance, o Google Home possibilita um som de boa qualidade, sem deixar de ser compacto. 
+                        	Mesmo que o usuário esteja ouvindo música, o dispositivo detecta com facilidade a sua voz ao solicitar algo ao dispositivo.
+                        </p>
+                        <p>
+                        	Quanto ao design, o Google Home conta com uma luz de LED escondida e tem uma superfície sensível ao toque. 
+                        	Para dar um detalhe especial à decoração da sua casa, o aparelho está disponível em diversas cores e acabamentos.
+                        </p>
+                        <p>
+                        	O Google Home também reúne funcionalidades voltadas para o funcionamento da casa, como alarme para acordar, timers para ajudar no preparo 
+                        	da comida e lista de compras.O dispositivo usa a conexão Wi-Fi para transmitir músicas, seja da playlist do Spotify ou do YouTube Music. 
+                        	Para completar, o gadget oferece diversas informações em 
+							tempo real que tornarão a sua vida mais simples, como notícias, mercado financeiro, itinerário de viagem e agenda de compromissos. 
+						</p>
+						<p>
+							Por meio da coleta de dados específicos, o Google Home também informa as atividades, compromissos e assuntos de interesse
+							 do usuário na função ”Diga-me sobre o meu dia”, que grava toda a agenda da pessoa para cada data.
+						</p>
+						<h2>Estas são todas as coisas novas que o Google Home consegue fazer</h2>
+						<h2>Assistente proativo</h2>
+						<p>
+							Alto-falantes inteligentes são bem burros até que você os ative com uma fala de ativação como “Okay, Google”. 
+							Graças a um Assistant atualizado, o Google Home poderá, em breve, enviar alertas como de trânsito intenso a 
+							caminho de algum evento marcado em seu calendário ou de mudança de status em seus voos. Você também pode programar
+							 o Assistant para lhe enviar lembretes. Ainda não está claro quanto controle você terá sobre esses tipos de alertas, 
+							 mas esperamos que a resposta seja “completo”.
+						</p>
+						<h2>Chamadas com as mãos livres</h2>
+						<p>
+							Essa aqui é importante. O Google em breve transformará todos os dispositivos Home em um viva voz gratuito para chamadas por Wi-Fi 
+							(a Amazon anunciou a sua própria versão disso com o Echo Show na semana passada)
+							A função é exatamente o que parece, mas eis alguns pontos que vale destacar:
+						</p>
+						<ul>
+							<li>
+								(Para o público americano) Todas as chamadas para os Estados Unidos e o Canadá serão gratuitas
+							</li>
+							<li>
+								Chamadas feitas de um Google Home aparecerão como “Privadas”, mas você pode customizar 
+								isso para mostrar seu número de telefone
+							</li>
+							<li>
+								O Google Home vai reconhecer diferentes vozes e usar a lista de contatos de 
+								um usuário como referência quando você disser algo como “ligar para a mãe”
+							</li>
+							<li>
+								Não existe a exigência de uma configuração extra, além de apenas configurar seu Google Home
+							</li>
+							<li>
+								O Google não disse se você poderá transferir uma chamada de um Google Home para um smartphone e vice-versa
+							</li>
+						</ul>
+						<p>
+							Infelizmente, essa função maneira começará a sair “ao longo dos próximos meses”. 
+							Isso pode significar agosto. Mas também pode significar dezembro.
+						</p>
+						<h2>Entretenimento</h2>
+						<p>
+							Além de integrar um monte de coisas de smartphones recentes, o Google Home em breve funcionará muito
+							 melhor com serviços de entretenimento.
+						</p>
+						<p>
+							Começando pela música. Spotify, Soundcloud, Deezer e outros em breve trabalharão em conjunto com o Google Home. 
+							E, mesmo que você achasse que isso já fosse possível, agora o Google Home tem suporte para conexões Bluetooth, 
+							então você poderá conectar outros dispositivos ao seu Google Home.
+						</p>
+						<p>A seguir, televisão. Isso aqui na verdade parece bem legal, também. Uma atualização para o Chromecast em
+							 breve transformará sua TV em um display para o Google Home. Isso significa que você pode perguntar para o 
+							 Google Home sobre sua agenda pela manhã, e um calendário vai aparecer na sua tela. Você também pode perguntar ao 
+							 Google sobre a previsão do tempo e, como você deve ter adivinhado, a previsão aparecerá em sua TV.
+						</p>
+						<p>
+							As coisas começam a ficar bem legais quando você passa a pedir para que o Google Home lhe mostre conteúdos como 
+							vídeos do YouTube. Dizer “mostre-me um macaco bebendo seu próprio mijo”, em teoria, deve ser o suficiente para que 
+							o dispositivo comece a reproduzir um vídeo de um macaco bebendo seu próprio mijo. Você também pode pedir para que o 
+							alto-falante digital comece a reproduzir programas de TV, graças a algumas novas integrações com o YouTube TV.
+						</p>
+						<hr />
+						<h2>As vantagens de uma casa inteligente e por que isso pode ser importante</h2>
+						<p>
+							Não é de hoje que nossas casas ganharam a habilidade de se automatizarem e tornar nossas vidas mais cômodas. Desde apertar 
+							um botão para ligar uma lâmpada a um controle remoto para abrir o portão da garagem, já se passaram décadas desde que uma 
+							"casa do futuro" foi apresentada durante uma feira internacional em Chicago. Era 1934. 
+						</p>
+						<p>
+							Não é de hoje que nossas casas ganharam a habilidade de se automatizarem e tornar nossas vidas mais cômodas. 
+							Desde apertar um botão para ligar uma lâmpada a um controle remoto para abrir o portão da garagem, já se passaram décadas desde 
+							que uma "casa do futuro" foi apresentada durante uma feira internacional em Chicago. Era 1934. 
+						</p>
+						<h2>Mas por que você precisa de uma casa inteligente, afinal?</h2>
+						<p>
+							OK. À primeira vista, alguns dos mais comentados aparelhos inteligentes parecem ser ridiculamente caros: 200 dólares por
+							 uma lâmpada que muda de cor  ou 250 dólares por um termostato que te tira do trabalho de programar a temperatura da sua casa 
+							 até pode ser divertido, mas bem, isso pode parecer, no mínimo, supérfluo.
+						</p>
+						<p>Não é bem assim. A mudança de cor ou ainda funções que se auto programão são simplesmente a cereja do bolo. 
+							A grande sacada fica por conta de seus sensores inteligentes que não ficam à luz do seu globo ocular. 
+							Quanto mais aparelhos conectados estiver à disposição da sua casa, mais sensores e mais inteligência você integra,
+							 e bem, mais “inteligente” sua casa fica.
+						</p>
+						<p>
+							Eventualmente, uma verdadeira casa inteligente vai saber quem você é, onde você está e o que você quer. 
+							E tudo isso sem você ter que dizer qualquer coisa do tipo. É quando aquele termostato automático 
+							e sua habilidade de se comunicar com aquelas lâmpadas poderão, por exemplo, indicar a possibilidade de um incêndio. 
+						</p>
+						<h2>Quais são os benefícios de uma casa inteligente?</h2>
+						<ul>
+							<li>
+								Economia: termostatos, sprinklers, lâmpadas que se acendem via Wi-Fi e 
+								módulos de aquecimento de água podem te ajudar nas contas de energia e água.
+							</li>
+							<li>
+								Controle: muitas coisas, desde fogões à geladeiras, passando por portas 
+								de garagens podem ser controlados via aplicativo. 
+							</li>
+							<li>
+								Conveniência: você pode dar acesso a sua casa a somente pessoas autorizadas. 
+								Um sensor na geladeira pode avisar que você 
+								está sem leite, por exemplo, e um vaso de plantas pode regar a sua samambaia por você.
+							</li>
+							<li>
+								Segurança: além de câmeras de segurança sem fio, sensores e alarmes de fumaça podem monitorar 
+								a sua casa via vídeo, e-mail ou mensagens de texto.
+							</li>
+						</ul>	
+						<p>
+							Independência para idosos: lembretes de áudio ou ainda sistemas de alerta ativados por 
+							voz são apenas algumas das possibilidades da automação que pode ajudar idosos a ter mais independência. 
+							Fora isso, câmeras sem fio com comunicação integradas podem ajudar a manter a segurança e conforto de seus 
+							parentes quando você estiver distante. 
+						</p>
+						<h2>Mas como eu faço?</h2>
+						<p>
+							Resumindo. Tudo que você precisa hoje em dia para dar o pontapé nessa história de casa inteligente é uma
+							 boa conexão de internet, um roteador
+							 sem fio, um smartphone ou um tablet e possivelmente uma central de controle conhecido como um Hub.
+						</p>
+						<p>
+							Uma vez que você já tenha mais que dois aparelhos inteligentes na sua casa, talvez seja um pouco inconveniente
+							 você ter que administrar mais do que um aplicativo. Por isso, considere investir em um único controle – 
+							 também conhecido como um Hub. 
+						</p>
+						<p>
+							Um hub atua como uma central de controle para sua casa. Ele “ajuda” todos os outros aparelhos, que comumente usa diferentes
+							 protocolos para comunicar-se um com o outros. E como cortesia, esses hubs se conectam com um aplicativo de telefone.
+						</p>
+                    </div>
+                </div>
+            </div>
+            <div id="moreInfo">
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h2>Produtos compatíveis com o Google Home</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="coluna col3">Produto</th>
+                                <th class="coluna col3">Valor($)</th>
+                                <th class="coluna col3">Produto</th>
+                                <th class="coluna col3">Valor($)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td class="coluna col3">2016 Chrysler 300</td>
+                                <td class="coluna col3">-</td>
+                                <td class="coluna col3">August Smart Lock Pro</td>
+                                <td class="coluna col3">279.99</td>
+                            </tr>
+                            <tr>
+                                <td class="coluna col3">Belkin WeMo Dimmer Wi-Fi Light Switch</td>
+                                <td class="coluna col3">64.99</td>
+                                <td class="coluna col3">Belkin WeMo Light Switch</td>
+                                <td class="coluna col3">39.99</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="coluna col3">Belkin WeMo Mini Wi-Fi Smart Plug</td>
+                                <td class="coluna col3">29.99</td>
+                                <td class="coluna col3">Belkin WeMo Switch + Motion</td>
+                                <td class="coluna col3">-</td>
+                            </tr>
+                            <tr>
+                                <td class="coluna col3">Blossom Smart Watering Controller</td>
+                                <td class="coluna col3">149.89</td>
+                                <td class="coluna col3">GE GTD75ECSLWS Dryer</td>
+                                <td class="coluna col3">713.10</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="coluna col3">GE GTW685BSLWS Top Loading Washer</td>
+                                <td class="coluna col3">639.00</td>
+                                <td class="coluna col3">Hive Welcome Home Standard</td>
+                                <td class="coluna col3">24.99</td>
+                            </tr>
+                            <tr>
+                                <td class="coluna col3">Nest Learning Thermostat Third Generation</td>
+                                <td class="coluna col3">243.44</td>
+                                <td class="coluna col3">Nvidia Spot</td>
+                                <td class="coluna col3">-</td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="coluna col3">Philips Hue Beyond</td>
+                                <td class="coluna col3">698.86</td>
+                                <td class="coluna col3">Philips Hue Go</td>
+                                <td class="coluna col3">59.99</td>
+                            </tr>
+                            <tr>
+                                <td class="coluna col3">Philips Hue Lightstrip Plus</td>
+                                <td class="coluna col3">89.99</td>
+                                <td class="coluna col3">Philips Hue White and Color Ambience Starter Kit A19</td>
+                                <td class="coluna col3">170.45</td>
+                            </tr>
+
+                            <tr class="odd">
+                                <td class="coluna col3">Philips Hue Wireless Dimming Kit</td>
+                                <td class="coluna col3">34.99</td>
+                                <td class="coluna col3">Rachio Smart Sprinkler Controller Generation 2</td>
+                                <td class="coluna col3">240.99</td>
+                            </tr>
+                            <tr>
+                                <td class="coluna col3">Switchmate Bright</td>
+                                <td class="coluna col3">44.00</td>
+                                <td class="coluna col3">Switchmate Power</td>
+                                <td class="coluna col3">39.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h3>Definições de alguns dos produtos:</h3>
+                        <dl>
+                            <dt>2016 Chrysler 300</dt>
+                            <dd>Como Steve McQueen em uma gola alta, o Chrysler 300 de 2016 é legal da velha escola. O crédito é um estilo suave, mas suave, que dá aos 300 um olhar que se destaca de seus pares, mesmo que seu formato básico tenha sido lançado há mais de uma década. Claro, o Dodge Charger, mecanicamente similar, possui uma postura comparativamente imponente, mas não exala a classe de seu primo glitzier - neste sentido, os dois são tão diferentes quanto Sinatra e as Pedras.</dd>
+                            <dt>August Smart Lock Pro</dt>
+                            <dd>Bloqueie e desbloqueie sua porta, controle o acesso sem chave e acompanhe quem vem e vem, tudo a partir do seu telefone.</dd>
+                            <dt>Belkin WeMo Light</dt>
+                            <dd>Os switches de luz WeMo habilitados para aplicativos da Belkin têm sido uma maneira relativamente acessível de aprimorar os switches em sua casa e o fato de que eles não precisam de um hub os torna um ponto de partida inicial bastante simples. Ainda assim, eles sofrem de uma falha flagrante: eles não podem diminuir suas luzes.</dd>
+                            <dt>Philips Hue</dt>
+                            <dd>Mais do que apenas luz, Philips Hue é sobre o que você pode imaginar. Acorde com a luz solar todos os dias. Transforme o tempo da história em outro mundo. Obtenha atualizações esportivas coloridas. Parece que você está em casa, mesmo quando você não está. Veja o que a Philips Hue pode fazer.</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h3>Video com mais informações</h3>
+                    </div>
+                    <div class="coluna col12">
+                        <iframe class="ifram" src="https://www.youtube.com/embed/f4ttppEc-GE"  allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+                <div class="linha">
+                    <div class="coluna col12">
+                        <h3>Galeria de fotos</h3>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna col12">
+                        <div class="slideshow-container">
+            				<div class="mySlides fade">
+            				  <div class="numbertext">1 / 9</div>
+            				  <img src="media/im1.jpg" alt="dispositivo Google Home" >
+            				  <div class="text">Dispositivo Google Home</div>
+            				</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">2 / 9</div>
+        					  <img src="media/im2.jpg" alt="dispositivos google home" >
+        					  <div class="text">Dispositivos google home</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">3 / 9</div>
+        					  <img src="media/im3.jpg" alt="interior de uma casa inteligente mostrando o que se pode controlar, como luz temperatura" >
+        					  <div class="text">Interior de uma casa inteligente mostrando o que se pode controlar, como luz temperatura</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">4 / 9</div>
+        					  <img src="media/im4.jpg" alt="desenho dos aparelhos elétricos conectados a casa inteligente" >
+        					  <div class="text">Desenho dos aparelhos elétricos conectados a casa inteligente</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">5 / 9</div>
+        					  <img src="media/im5.jpg" alt="sala de estar inteligente" >
+        					  <div class="text">Sala de estar inteligente</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">6 / 9</div>
+        					  <img src="media/im6.jpg" alt="ajustando a temperatura da casa inteligente" >
+        					  <div class="text">Ajustando a temperatura da casa inteligente</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">7 / 9</div>
+        					  <img src="media/im7.jpg" alt="Google Home ao lado de um smartphone sincronizados" >
+        					  <div class="text">Google Home ao lado de um smartphone sincronizados 7</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">8 / 9</div>
+        					  <img src="media/im8.jpg" alt="Dispositivo Google Home em cima de uma mesa ao lado de um sofá"  >
+        					  <div class="text">Dispositivo Google Home em cima de uma mesa ao lado de um sofá</div>
+        					</div>
+        					<div class="mySlides fade">
+        					  <div class="numbertext">9 / 9</div>
+        					  <img src="media/im9.jpg" alt="previsão do tempo digital" >
+        					  <div class="text">Previsão do tempo digital</div>
+        					</div>
+        					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+        				</div>
+        				<br>
+            			<div class="sliderImgs">
+            			  <span class="dot" onclick="currentSlide(1)"></span>
+            			  <span class="dot" onclick="currentSlide(2)"></span>
+            			  <span class="dot" onclick="currentSlide(3)"></span>
+            			  <span class="dot" onclick="currentSlide(4)"></span>
+            			  <span class="dot" onclick="currentSlide(5)"></span>
+            			  <span class="dot" onclick="currentSlide(6)"></span>
+            			  <span class="dot" onclick="currentSlide(7)"></span>
+            			  <span class="dot" onclick="currentSlide(8)"></span>
+            			  <span class="dot" onclick="currentSlide(9)"></span>
+            			</div>
+        				<script src="js/slider.js"></script>
+        				<br>
+                    </div>
+                </div>
+            </div>
+            <div id="registrationForm" class="conteudo-extra">
+                <div class="linha">
+                    <div class="coluna col12 contato">
+                        <h3>Cadastro Newsletter</h3>
+                        <form >
+                            <label for="nome" >Nome Completo</label>
+                            <input type="text" name="nome" id="nome" placeholder="Seu Nome completo..." required="required">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="digite seu e-mail..." required="required">
+                            <label for="nascimento">Data de Nascimento</label>
+                            <input type="date" name="nascimento" id="nascimento"  required="required">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" required="required">
+                            <label for="comment">Comentário</label>
+                            <textarea name="comment" id="comment" placeholder="digite seu comentário aqui..." ></textarea>
+                            <input type="submit" class="botao" name="enviar" value="Cadastre-se para Novidades &raquo;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="linha">
+                <div class="coluna col12">
+                    <address>Rua X, N, Cidade - Estado</address>
+                    <span>&copy; Copyright by Hugo &amp; Luiz.</span>
+                    <span><a href="mailto:email@gmail.com?subject=Assunto&body=Texto">Contato</a></span>
+                </div>
+            </div>
+        </footer>
+   </body>
+</html>

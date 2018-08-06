@@ -1,0 +1,428 @@
+/* Normalização do estilo*/
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+footer,
+header,
+main,
+menu,
+nav,
+section{
+  display: block;
+}
+
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  align-content: center;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+
+button,
+input,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/* */
+.odd{
+    background-color: #1f3c58;
+}
+.odd td{
+    color: #DDD;
+}
+dl dt{
+    font-weight: 500;
+}
+dl dd{
+    margin-bottom: 3px;
+}
+thead tr{
+    background-color: #dee3e6;
+}
+body
+{
+	font-family:  Roboto, sans-serif;
+	color: #333;
+}
+a:link,
+a:active,
+a:visited
+{
+	color: #315e8a;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+/* grid 960px */
+.linha
+{
+	width: 480px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+.coluna
+{
+	padding: 0 10px;
+	float: left;
+}
+.col1
+{
+ 	width: 20px;
+}
+.col2
+{
+ 	width: 60px;
+}
+.col3
+{
+ 	width: 100px;
+}
+.col4
+{
+ 	width: 140px;
+}
+.col5
+{
+ 	width: 180px;
+}
+.col6
+{
+ 	width: 220px;
+}
+.col7
+{
+ 	width: 260px;
+}
+.col8
+{
+ 	width: 300px;
+}
+.col9
+{
+ 	width: 340px;
+}
+.col10
+{
+ 	width: 380px;
+}
+.col11
+{
+ 	width: 420px;
+}
+.col12
+{
+ 	width: 460px;
+}
+iframe{
+    width: 450px;
+    height: 300px;
+}
+/* Estilos reutilizáveis */
+.sem-padding
+{
+	padding: 0 !important;
+}
+.sem-margin
+{
+	margin: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-weight: 500;
+	margin: 15px 0 10px 0;
+}
+ul li, ol li
+{
+	margin-bottom: 5px;
+}
+ul.inline li,
+ol.inline li
+{
+	display: inline;
+	margin-right: 15px;
+}
+ul.inline li:last-child,
+ol.inline li:last-child
+{
+	margin-right: 0;
+}
+ul.sem-marcador,
+ol.sem-marcador
+{
+	list-style: none;
+}
+a.botao,
+input.botao
+{
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor: pointer;
+	margin: 5px 0 5px 0;
+	display: inline-block;
+	border: none;
+}
+a.botao:hover,
+input.botao:hover
+{
+	background: #315e8a;
+	text-decoration: none;
+}
+img
+{
+	max-width: 100%;
+	
+    display: block;
+    margin: 0 auto;
+}
+/* Layout do site */
+header
+{
+	background: #dee3e6;
+}
+h1.logo
+{
+	font-weight: 300;
+	color: #315e8a;
+	letter-spacing: -2px;
+}
+.conteudo-extra
+{
+	background: #f1f2ea;
+}
+footer
+{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
+}
+.menu
+{
+	text-transform: uppercase;
+	text-align: right;
+	margin-top: 20px;
+}
+.menu li a
+{
+    float: right;
+	padding: 5px 3px;
+	border-radius: 3px;
+}
+.menu li a:hover
+{
+	text-decoration: none;
+	background: #1f3c58;
+	color: #ebebeb;
+}
+.contato label
+{
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+}
+.contato input, .contato textarea
+{
+	display: block;
+	margin-bottom: 15px;
+	padding: 5px 2%;
+	width: 96%;
+}
+.contato textarea
+{
+	height: 150px;
+}
+.contato input.botao
+{
+	width:  auto;
+}
+p {
+    text-align: justify;
+}
+h4{
+    font-weight: 300;
+}
+td{
+    text-align: center;
+}
+.fLeft{
+    float: left;
+}
+.fRight{
+    float: right;
+}
+.centro{
+    text-align: center;
+}
+
+/* todo o css para fazer a galeria de slides funcionar*/
+.sliderImgs{
+    text-align: center;
+}
+
+.mySlides {display:none}
+
+/* Contentor de slides */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Botões anteriores e anteriores */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Posicione o "próximo botão" à direita */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* No deslocamento, adicione uma cor de fundo preto com um pouco de visualização */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto de legenda */
+.text {
+  color: #FFF;
+  text-shadow: 0 0 3px #000;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Número de texto (1/9, etc.) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Os pontos / balas / indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Animação de desvanecimento */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
