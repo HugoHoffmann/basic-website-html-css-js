@@ -1,1 +1,1 @@
-# casa_inteligente_site_basico
+# Site criado para aprendizado, com embasamento na temática de casas inteligentes.
